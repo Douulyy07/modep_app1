@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Carte Mutuelle</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .carte {
+    width: 350px;
+    height: 200px;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .header {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    padding-bottom: 5px;
+  }
+
+  .infos {
+    margin-top: 15px;
+    font-size: 1rem;
+  }
+
+  .infos p {
+    margin: 6px 0;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: right;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="carte">
+      <div class="header">CARTE MUTUELLE</div>
+      <div class="infos">
+        <p><strong>Nom :</strong> {{ nom }}</p>
+        <p><strong>Prénom :</strong> {{ prenom }}</p>
+        <p><strong>CIN :</strong> {{ cin }}</p>
+        <p><strong>NAX :</strong> {{ nax }}</p>
+        <p><strong>Date de Recrutement :</strong> {{ date_recu }}</p>
+      </div>
+      <div class="footer">MODEP - Mutuelle des Employés Portuaires</div>
+    </div>
+  </div>
+</body>
+</html>
